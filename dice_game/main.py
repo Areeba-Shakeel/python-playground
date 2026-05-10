@@ -14,7 +14,7 @@ while True:
     if user == "exit":
         break
 
-    # 🔥 FIX: invalid input check
+    # FIX: invalid input check
     if user != "":
         print("Invalid input, press Enter or type 'exit'")
         continue
