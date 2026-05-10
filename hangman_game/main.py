@@ -101,9 +101,9 @@ while True:
             win_streak += 1
             loss_streak = 0
 
-            # 🔥 BONUS RULE
+            #  BONUS RULE
             if win_streak == 3:
-                print("🔥 BONUS! 3 WIN STREAK +20 POINTS")
+                print("BONUS! 3 WIN STREAK +20 POINTS")
                 total_score += 20
                 win_streak = 0
 
@@ -115,9 +115,9 @@ while True:
         loss_streak += 1
         win_streak = 0
 
-        # 💀 OUT RULE
+        # OUT RULE
         if loss_streak == 3:
-            print("\n💀 OUT! 3 consecutive losses")
+            print("\n OUT! 3 consecutive losses")
             print("Game Over Automatically")
             print("Total Games:", total_games)
             print("Total Score:", total_score)
