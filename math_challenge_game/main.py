@@ -5,6 +5,7 @@ print("Type 'exit' to quit\n")
 
 user_score = 0
 rounds = 0
+wrong_streak = 0
 
 while True:
 
@@ -34,11 +35,20 @@ while True:
     if user == correct_answer:
         print("Correct!")
         user_score += 10
+        wrong_streak = 0
+
     else:
         print("Wrong! Correct answer was:", correct_answer)
+        wrong_streak += 1
+
+        print("Wrong streak:", wrong_streak, "/ 3")
+
+        if wrong_streak == 3:
+            print("\nYou gave 3 wrong answers continuously!")
+            print("Game Over")
+            break
 
     rounds += 1
-
 
 print("\n--- GAME OVER ---")
 print("Rounds Played:", rounds)
